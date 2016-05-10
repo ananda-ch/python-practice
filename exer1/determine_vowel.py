@@ -3,7 +3,7 @@ def determine_vowel():
     in_char = raw_input('Enter Character:')
     if in_char.lower() == 'bye':
         exit(0)
-    if in_char in vowel_list:
+    if in_char.lower() in vowel_list:
         print '%s is a vowel' % in_char
     else:
         print '%s is not an vowel' % in_char
