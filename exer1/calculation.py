@@ -32,7 +32,7 @@ def main():
         ops = sys.argv[1]
         for i in range(len(sys.argv) - 2):
             ele = sys.argv[i+2]
-            if isinstance(ele, int):
+            if ele.isdigit():
                 data.append(int(ele))
             else:
                 print 'Please enter only integers'
